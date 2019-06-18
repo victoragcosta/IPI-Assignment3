@@ -34,21 +34,20 @@ cv2.imshow('Distance Transform', dist)
 _, peaks = cv2.threshold(dist, 255-110, 255, cv2.THRESH_BINARY)
 cv2.imshow('Picos', peaks)
 
-cells = peaks + unholed
+cells = unholed
 cv2.imshow('Celulas', cells)
 
 # Achar marcadores
 contours, _ = cv2.findContours(peaks, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-contours2, _ = cv2.findContours(unholed, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 # Cria imagem de marcadores
 markers = np.zeros(dist.shape, dtype=np.int32)
 # Desenha os marcadores
-for i in range(len(contours+contours2)):
+for i in range(len(contours)):
   cv2.drawContours(markers, contours, i, (i+1), -1)
 axes[0].imshow(markers)
 
 # Computar watershed
-water = cv2.watershed(np.repeat(img[:,:,np.newaxis], 3, axis=2), markers)
+water = cv2.watershed(np.repeat(cells[:,:,np.newaxis], 3, axis=2), markers)
 axes[1].imshow(water)
 
 plt.show()
