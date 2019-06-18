@@ -48,7 +48,7 @@ deve seguir os seguintes passos:
    MxN bytes correspondem aos pixels de luminância, seguindo de (M/2)x(N/2)
    bytes de crominância U, e (M/2)x(N/2) bytes de crominância V. Onde M,N são
    as dimensões da imagem. A função deve pedir o nome do arquivo, a quantidade
-   de quadros (images) a serem lidos e a resolução (M,N). Exemplo: [Y,U,V] =
+   de quadros (images) a serem lidos e a resolução (M,N). Exemplo: \[Y,U,V\] =
    ler_yuv('foreman.yuv',5,352,288). As saídas devem estar como matrizes de
    inteiros de 8 bits sem sinal.
 2. Ler o primeiro quadro do vídeo foreman.
@@ -63,7 +63,7 @@ imagens.
    Questão 2.
 2. Para o canal luminância (Y) do primeiro quadro faça o seguinte processamento:
 
-    1. Quantize o utilizando um passo de quantização de 5, 10 e 15.
+    1. Quantize-o utilizando um passo de quantização de 5, 10 e 15.
     2. Faça um gráfico indicando Entropia x Quantização. Para isso pode utilizar
       funções prontas do Matlab ou OPENCV para calcular Entropia. No gráfico
       incluir a entropia da imagem SEM quantização.
