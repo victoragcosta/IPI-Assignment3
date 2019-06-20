@@ -33,7 +33,7 @@ deve seguir os seguintes passos:
 1. Binarizar a imagem, onde as células são pretas e o fundo é branco (utilizando
    métodos similares a questão 2.1)
 2. Se necessário, utilize uma função para preencher espaços desconectados (tipo
-   `bwareopen` no matlab).
+   `bwareaopen` no matlab).
 3. Se necessário faça um preenchimento de buracos (para preencher buracos pode
    ser necessário usar o negativo da imagem, nesse casso faça o negativo novamente
    antes de passar para o passo 4).
