@@ -13,14 +13,14 @@ Victor André Gris Costa | 16/0019311
 
 Pacote        | Versão
 --------------|---------
-matplotlib    | 3.0.3
-numpy         | 1.16.2
-opencv-python | 4.0.0.21
+matplotlib    | 3.1.0
+numpy         | 1.16.4
+opencv-python | 4.1.0.25
 
 ## Modo de Execução
 
 1. Acesse a pasta raiz do projeto
-2. Execute os exercícios com o comando `python src/problema<1,2 ou 3>.py`
+2. Execute os exercícios com o comando `python src/problema<1 ou 2>.py`
 3. Dependendo do seu ambiente, para garantir a versão correta de python, troque
    `python` por `python3` ou `python3.7`
 
@@ -55,7 +55,7 @@ deve seguir os seguintes passos:
 3. Realize uma máscara de segmentação que indique a parte de pele humana (pode
    usar qualquer técnica de segmentação vista em sala de aula).
 
-### Questão 3
+### Questão 3 (Cancelada)
 
 Utilize o leitor de YUV feito na questão anterior para fazer um codificador de
 imagens.
